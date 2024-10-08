@@ -1,6 +1,6 @@
 text=input("Please insert a text of your choice: ")
 text=text.lower()
-(tuple(list(text)))
+
 ask1=input("Please insert 1 letters of your choosing: ")
 ask2=input("Please insert 1 letters of your choosing: ")
 ask3=input("Please insert 1 letters of your choosing: ")
@@ -12,11 +12,18 @@ print(f"this is how many times your first letter was in the text: {(text.count(a
 print(f"this is how many times your second letter was in the text:{(text.count(ask2))}")
 print(f"this is how many times your third letter was in the text: {(text.count(ask3))}")
 
-length=(len(text))
-minus=(text.count(" "))
-print(f"this is how many words are in your text: {(length) - (minus)}")
 
 
+texts=(text.split(" "))
+print(f"The number of words in your text is {len(texts)} words")
+print(f"this is the first letter of your text:{text[0]}")
+print(f"this is the last letter of your text:{(text[-1])}")
 
+print(f"this is your text backwords: {text[::-1]}")
 
-print(f"this is the last letter of your text is:{(text[-1])}")
+p='python'
+if p in text:
+    print(f'{p} is present in the text')
+else:
+    print(f'{p} is not present in the text')
+
